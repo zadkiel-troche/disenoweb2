@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+}
+.main-container{
+    margin-top: 50px;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+}
+
+.header{
+    padding: 30px;
+    background-color: rgba(110,100,500,0.2);
+}
+
+.tabla-cargar{
+    background-color: rgba(110,100,500,0.2);
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.tabla-datos{
+    background-color: rgba(110,100,500,0.2);
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
