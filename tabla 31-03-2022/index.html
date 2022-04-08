@@ -11,6 +11,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
     <title>Tabla</title>
 </head>
 
@@ -18,48 +20,7 @@
     <div class="header">
         <h1 class="titulo">Tabla de Datos</h1>
     </div>
-    <div class="container main-container">
-
-        <!-- <div class="tabla-cargar">
-            <h3 style="text-align: center;">Cargar Datos</h3>
-            <hr />
-            <form>
-                <div class="row">
-                    <div class="mb-3 col-12">
-                        <label for="exampleInputEmail1" class="form-label">Número de Documento</label>
-                        <input type="number" class="form-control" id="num_doc">
-                    </div>
-
-                    <div class="mb-3 col-6">
-                        <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="num_doc">
-                    </div>
-
-                    <div class="mb-3 col-6">
-                        <label for="exampleInputEmail1" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="num_doc">
-                    </div>
-
-                    <div class="mb-3 col-6">
-                        <label for="exampleInputEmail1" class="form-label">Fec. Nacimiento</label>
-                        <input type="date" class="form-control" id="num_doc">
-                    </div>
-
-                    <div class="mb-3 col-6">
-                        <label for="exampleInputEmail1" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="num_doc">
-                    </div>
-
-                    <div class="mb-3 col-6" style="margin-top: 20px;">
-                        <button type="submit" class="btn btn-primary col-12">Guardar Datos</button>
-                    </div>
-
-                    <div class="mb-3 col-6" style="margin-top: 20px;">
-                        <button type="submit" class="btn btn-danger col-12">Limpiar Datos</button>
-                    </div>
-                </div>
-            </form>
-        </div> --> 
+    <div class="container main-container"> 
 
         <div class="tabla-datos">
             <h3 style="text-align: center;">Ver Datos</h3>
@@ -68,11 +29,11 @@
             <!-- Botones para cargar y eliminar datos-->
             <div class="row">
                 <div class="mb-3 col-6" style="margin-top: 20px;">
-                    <a onclick="mostrarDatos()" id="btn-cargar" class="btn btn-primary col-12">Cargar Datos</a>
+                    <a id="btn-cargar" class="btn btn-primary col-12">Cargar Datos</a>
                 </div>
 
                 <div class="mb-3 col-6" style="margin-top: 20px;">
-                    <a onclick="limpiarDatos()" id="btn-limpiar" class="btn btn-danger col-12">Limpiar Datos</a>
+                    <a id="btn-limpiar" class="btn btn-danger col-12">Limpiar Datos</a>
                 </div>
             </div>
 
@@ -85,12 +46,59 @@
                         <th scope="col">Apellido</th>
                         <th scope="col">Fecha</th>
                         <th scope="col">Dirección</th>
+                        <th scope="col">Acciones</th>
                     </tr>
                 </thead>
                 <tbody id="data-table-personas">
                     <!-- aqui van los datos de la tabla-->
                 </tbody>
             </table>
+        </div>
+
+        <div class="tabla-cargar">
+            <h3 style="text-align: center;">Cargar Datos</h3>
+            <a id="btn-nuevo" ></a>
+            <hr />
+            <form>
+                <div class="row">
+                    <div class="mb-3 col-12">
+                        <input type="number" class="form-control" id="idx" >
+                    </div>
+
+                    <div class="mb-3 col-12">
+                        <label for="exampleInputEmail1" class="form-label">Número de Documento</label>
+                        <input type="number" class="form-control" id="num_doc">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputEmail1" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputEmail1" class="form-label">Fec. Nacimiento</label>
+                        <input type="date" class="date form-control" id="fec_nac">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputEmail1" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direc">
+                    </div>
+
+                    <div class="mb-3 col-6" style="margin-top: 20px;">
+                        <a id="btn-guardar" class="btn btn-primary col-12">Guardar Datos</a>
+                    </div>
+
+                    <div class="mb-3 col-6" style="margin-top: 20px;">
+                        <a id="btn-cancelar" class="btn btn-danger col-12">Limpiar Datos</a>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
