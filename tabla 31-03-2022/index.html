@@ -57,11 +57,16 @@
 
         <div class="tabla-cargar">
             <h3 style="text-align: center;">Cargar Datos</h3>
+
+            <div align="center">   
+                <a class="btn  btn-success " id="btn-nuevo">Nuevo Registro</a>
+            </div>
+
             <a id="btn-nuevo" ></a>
             <hr />
-            <form>
+            <form id="formCargar" hidden>
                 <div class="row">
-                    <div class="mb-3 col-12">
+                    <div class="mb-3 col-12" hidden>
                         <input type="number" class="form-control" id="idx" >
                     </div>
 
@@ -91,11 +96,11 @@
                     </div>
 
                     <div class="mb-3 col-6" style="margin-top: 20px;">
-                        <a id="btn-guardar" class="btn btn-primary col-12">Guardar Datos</a>
+                        <a id="btn-guardar" class="btn btn-primary col-12">Guardar</a>
                     </div>
 
                     <div class="mb-3 col-6" style="margin-top: 20px;">
-                        <a id="btn-cancelar" class="btn btn-danger col-12">Limpiar Datos</a>
+                        <a id="btn-cancelar" class="btn btn-danger col-12">Cancelar</a>
                     </div>
                 </div>
             </form>
